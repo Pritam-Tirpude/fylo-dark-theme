@@ -453,6 +453,15 @@ span {
   font-size: small;
 }
 
+.attribution {
+  color: $neutral_white;
+  font-size: $header5;
+  text-align: center;
+}
+.attribution a {
+  color: $accent_blue_inside_call_to_action_gradient;
+}
+
 // MEDIA QUERY
 @media screen and (max-width: 900px) {
   .intro-section {

@@ -646,6 +646,16 @@ span {
   font-size: small;
 }
 
+.attribution {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #339ecc;
+}
+
 @media screen and (max-width: 900px) {
   .intro-section {
     background: url("../images/bg-curvy-mobile.svg") no-repeat;
