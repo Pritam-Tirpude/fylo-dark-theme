@@ -1,0 +1,730 @@
+@import "global";
+
+main {
+  position: relative;
+}
+
+.main-header {
+  color: $neutral_white;
+  width: 90%;
+  margin: auto;
+
+  .logo {
+    flex: 4 1 40rem;
+  }
+
+  nav {
+    @include flex(space-around, center, row);
+    min-height: 20vh;
+    font-family: $font_raleway;
+  }
+
+  nav ul {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: $header5;
+    color: $neutral_white;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}
+
+.intro-section {
+  margin-top: 3rem;
+  min-height: 100vh;
+  background: url("../images/bg-curvy-desktop.svg") no-repeat;
+  background-position-y: bottom;
+
+  .illustration-intro {
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+    h1 {
+      margin-top: 3rem;
+      color: $neutral_white;
+      font-family: $font_raleway;
+      font-size: $header1;
+    }
+    p {
+      margin-top: 3rem;
+      color: $neutral_white;
+      font-size: $header4;
+    }
+
+    button {
+      margin-top: 3rem;
+      padding: 1.5rem 10rem;
+      border: none;
+      border-radius: 2rem;
+      color: $neutral_white;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      background: linear-gradient(
+        to right,
+        $accent_cyan_inside_call_to_action_gradient,
+        $accent_blue_inside_call_to_action_gradient
+      );
+
+      &:hover {
+        background: $accent_cyan_inside_call_to_action_gradient;
+      }
+    }
+  }
+}
+
+.feature-section {
+  min-height: 100vh;
+  padding-top: 10rem;
+  text-align: center;
+  background: $primary_main_background;
+
+  .access-security {
+    @include flex(space-around, center, row);
+    .file-content {
+      h2 {
+        margin-top: 3rem;
+        font-family: $font_raleway;
+        font-size: $header3;
+        color: $neutral_white;
+      }
+      p {
+        margin-top: 0.5rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+
+    .security-content {
+      h2 {
+        margin-top: 3rem;
+        font-family: $font_raleway;
+        font-size: $header3;
+        color: $neutral_white;
+      }
+      p {
+        margin-top: 0.5rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+  }
+
+  .real-time-store-file {
+    margin-top: 10rem;
+    @include flex(space-around, center, row);
+
+    .real-time-content {
+      h2 {
+        margin-top: 3rem;
+        font-family: $font_raleway;
+        font-size: $header3;
+        color: $neutral_white;
+      }
+      p {
+        margin-top: 0.5rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+
+    .store-file-content {
+      h2 {
+        margin-top: 3rem;
+        font-family: $font_raleway;
+        font-size: $header3;
+        color: $neutral_white;
+      }
+      p {
+        margin-top: 0.5rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+  }
+}
+
+.stay-productive {
+  @include flex(space-around, center, row);
+  min-height: 100vh;
+  background: $primary_main_background;
+
+  .stay-productive-content {
+    h1 {
+      color: $neutral_white;
+      font-family: $font_raleway;
+      font-size: $header1;
+    }
+
+    p {
+      margin-top: 1rem;
+      color: $neutral_white;
+      font-size: $header5;
+    }
+
+    .how-works {
+      margin-top: 1rem;
+
+      a {
+        color: $accent_cyan_inside_call_to_action_gradient;
+        text-decoration: underline;
+        text-underline-offset: 0.8rem;
+        font-size: $header5;
+
+        &:hover {
+          color: $neutral_white;
+        }
+      }
+    }
+  }
+}
+
+.testimonials-cards {
+  @include flex(space-evenly, center, row);
+  background: url("../images/bg-quotes.png") no-repeat, $primary_main_background;
+  background-position-x: 2%;
+  background-position-y: 15%;
+  position: relative;
+  min-height: 100vh;
+
+  .satish {
+    padding: 3rem 3rem;
+    background: $primary_testimonials_background;
+    border-radius: 1rem;
+    width: 30%;
+
+    p {
+      color: $neutral_white;
+      font-size: $header5;
+    }
+
+    .satish-info {
+      margin-top: 3rem;
+      @include flex(flex-start, center, row);
+
+      img {
+        width: 5rem;
+        border-radius: 50%;
+      }
+
+      .author-satish {
+        margin-left: 1rem;
+
+        h3 {
+          color: $neutral_white;
+          font-family: $font_raleway;
+        }
+        h4 {
+          color: $neutral_white;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .bruce {
+    padding: 3rem 3rem;
+    background: $primary_testimonials_background;
+    border-radius: 1rem;
+    width: 30%;
+
+    p {
+      color: $neutral_white;
+      font-size: $header5;
+    }
+
+    .bruce-info {
+      margin-top: 3rem;
+      @include flex(flex-start, center, row);
+
+      img {
+        width: 5rem;
+        border-radius: 50%;
+      }
+
+      .author-bruce {
+        margin-left: 1rem;
+
+        h3 {
+          color: $neutral_white;
+          font-family: $font_raleway;
+        }
+        h4 {
+          color: $neutral_white;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .iva {
+    padding: 3rem 3rem;
+    background: $primary_testimonials_background;
+    border-radius: 1rem;
+    width: 30%;
+
+    p {
+      color: $neutral_white;
+      font-size: $header5;
+    }
+
+    .iva-info {
+      margin-top: 3rem;
+      @include flex(flex-start, center, row);
+
+      img {
+        width: 5rem;
+        border-radius: 50%;
+      }
+
+      .author-iva {
+        margin-left: 1rem;
+
+        h3 {
+          color: $neutral_white;
+          font-family: $font_raleway;
+        }
+        h4 {
+          color: $neutral_white;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .sign-up {
+    padding: 3rem 3rem;
+    position: absolute;
+    top: 80%;
+    background: $primary_intro_email_sign_up_background;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 10px rgba(#000000, 0.2),
+      0px 20px 40px rgba(#000000, 0.2);
+    width: 70%;
+    z-index: 100;
+
+    h1 {
+      font-family: $font_raleway;
+      font-size: $header1;
+      color: $neutral_white;
+    }
+
+    p {
+      margin-top: 3rem;
+      color: $neutral_white;
+      font-size: $header5;
+    }
+
+    input {
+      width: 50%;
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 1.5rem 2rem;
+      margin-left: 2rem;
+      border: none;
+      border-radius: 2rem;
+      color: $neutral_white;
+      font-family: $font_raleway;
+      cursor: pointer;
+      font-weight: bold;
+      background: linear-gradient(
+        to right,
+        $accent_cyan_inside_call_to_action_gradient,
+        $accent_blue_inside_call_to_action_gradient
+      );
+
+      &:hover {
+        background: $accent_cyan_inside_call_to_action_gradient;
+      }
+    }
+  }
+}
+.footer-section {
+  min-height: 100vh;
+  @include flex(space-around, center, row);
+  background: $primary_footer_background;
+
+  .address-info {
+    .address {
+      margin-top: 3rem;
+      @include flex(flex-start, center, row);
+
+      p {
+        margin-left: 2rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+  }
+
+  .telephone-info {
+    .phone-number {
+      @include flex(flex-start, center, row);
+
+      p {
+        margin-left: 2rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+
+    .email {
+      margin-top: 3rem;
+      @include flex(flex-start, center, row);
+
+      p {
+        margin-left: 2rem;
+        color: $neutral_white;
+        font-size: $header5;
+      }
+    }
+  }
+
+  .sitemap {
+    @include flex(space-evenly, center, row);
+
+    .sitemap-links {
+      a {
+        display: block;
+        margin-top: 1rem;
+        color: $neutral_white;
+        font-size: $header5;
+        text-decoration: none;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.contact-links {
+  a {
+    display: block;
+    margin-top: 1rem;
+    color: $neutral_white;
+    font-size: $header5;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.social-network {
+  @include flex(center, center, row);
+
+  button {
+    padding: 1rem;
+    background: none;
+    border: none;
+    color: $neutral_white;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent_cyan_inside_call_to_action_gradient;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+span {
+  margin-top: 1rem;
+  @include flex(flex-start, center, row);
+  font-size: small;
+}
+
+// MEDIA QUERY
+@media screen and (max-width: 900px) {
+  .intro-section {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+
+    .illustration-intro {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .feature-section {
+    .access-security {
+      @include flex(center, center, column);
+
+      .security-content {
+        margin-top: 5rem;
+      }
+    }
+
+    .real-time-store-file {
+      @include flex(center, center, column);
+
+      .store-file-content {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  .stay-productive {
+    @include flex(center, center, column);
+    flex-wrap: wrap;
+
+    .stay-productive-image {
+      padding: 3rem;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .stay-productive-content {
+      margin-top: 3rem;
+      padding: 2rem;
+
+      h1 {
+        font-size: $header4;
+      }
+    }
+  }
+
+  .testimonials-cards {
+    display: block;
+    min-height: 200vh;
+    background-position-x: 13%;
+    background-position-y: 1%;
+    padding: 5rem;
+    position: relative;
+
+    br {
+      display: none;
+    }
+    .satish {
+      width: 100%;
+    }
+
+    .bruce {
+      margin-top: 3rem;
+      width: 100%;
+    }
+
+    .iva {
+      margin-top: 3rem;
+      width: 100%;
+    }
+
+    .sign-up {
+      left: 15%;
+      top: 85%;
+      br {
+        display: none;
+      }
+
+      h1 {
+        font-size: $header4;
+      }
+
+      input {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .footer-section {
+    @include flex(center, flex-start, column);
+    width: 100%;
+
+    .address-info {
+      margin-top: 30rem;
+      margin-left: 5rem;
+    }
+
+    .telephone-info {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .sitemap {
+      margin-top: 3rem;
+      margin-left: 5rem;
+
+      .sitemap-links {
+        @include flex(space-evenly, center, column);
+      }
+    }
+
+    .contact-links {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .social-network {
+      margin-left: 12rem;
+      margin-top: 7rem;
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+
+  .intro-section {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+
+    .illustration-intro {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .feature-section {
+    .access-security {
+      @include flex(center, center, column);
+
+      .security-content {
+        margin-top: 5rem;
+      }
+    }
+
+    .real-time-store-file {
+      @include flex(center, center, column);
+
+      .store-file-content {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  .stay-productive {
+    @include flex(center, center, column);
+    flex-wrap: wrap;
+
+    .stay-productive-image {
+      padding: 3rem;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .stay-productive-content {
+      margin-top: 3rem;
+      padding: 2rem;
+
+      h1 {
+        font-size: $header4;
+      }
+    }
+  }
+
+  .testimonials-cards {
+    display: block;
+    min-height: 100vh;
+    background-position-x: 13%;
+    background-position-y: 1%;
+    padding: 5rem;
+    position: relative;
+
+    br {
+      display: none;
+    }
+    .satish {
+      width: 100%;
+    }
+
+    .bruce {
+      margin-top: 3rem;
+      width: 100%;
+    }
+
+    .iva {
+      margin-top: 3rem;
+      width: 100%;
+    }
+
+    .sign-up {
+      left: 15%;
+      top: 85%;
+      br {
+        display: none;
+      }
+
+      h1 {
+        font-size: $header4;
+      }
+
+      input {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .footer-section {
+    @include flex(center, flex-start, column);
+    width: 100%;
+
+    .address-info {
+      margin-top: 30rem;
+      margin-left: 5rem;
+    }
+
+    .telephone-info {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .sitemap {
+      margin-top: 3rem;
+      margin-left: 5rem;
+
+      .sitemap-links {
+        @include flex(space-evenly, center, column);
+      }
+    }
+
+    .contact-links {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .social-network {
+      margin-left: 30rem;
+      margin-top: 7rem;
+    }
+  }
+}

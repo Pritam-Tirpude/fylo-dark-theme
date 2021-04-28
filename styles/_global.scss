@@ -1,0 +1,41 @@
+$header1: 4rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_intro_email_sign_up_background: hsl(217, 28%, 15%);
+$primary_main_background: hsl(218, 28%, 13%);
+$primary_footer_background: hsl(216, 53%, 9%);
+$primary_testimonials_background: hsl(219, 30%, 18%);
+
+$accent_cyan_inside_call_to_action_gradient: hsl(176, 68%, 64%);
+$accent_blue_inside_call_to_action_gradient: hsl(198, 60%, 50%);
+$accent_light_red_error: hsl(0, 100%, 63%);
+$neutral_white: hsl(0, 0%, 100%);
+
+$font_raleway: "Raleway", sans-serif;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: $primary_intro_email_sign_up_background;
+}

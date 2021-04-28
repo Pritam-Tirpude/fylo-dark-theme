@@ -1,0 +1,990 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1c2431;
+}
+
+main {
+  position: relative;
+}
+
+.main-header {
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.main-header .logo {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 40rem;
+          flex: 4 1 40rem;
+}
+
+.main-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 20vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-header nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.main-header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.main-header a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.intro-section {
+  margin-top: 3rem;
+  min-height: 100vh;
+  background: url("../images/bg-curvy-desktop.svg") no-repeat;
+  background-position-y: bottom;
+}
+
+.intro-section .illustration-intro {
+  text-align: center;
+}
+
+.intro-section .intro-text {
+  text-align: center;
+}
+
+.intro-section .intro-text h1 {
+  margin-top: 3rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+}
+
+.intro-section .intro-text p {
+  margin-top: 3rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.intro-section .intro-text button {
+  margin-top: 3rem;
+  padding: 1.5rem 10rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+}
+
+.intro-section .intro-text button:hover {
+  background: #65e2d9;
+}
+
+.feature-section {
+  min-height: 100vh;
+  padding-top: 10rem;
+  text-align: center;
+  background: #181f2a;
+}
+
+.feature-section .access-security {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.feature-section .access-security .file-content h2 {
+  margin-top: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.feature-section .access-security .file-content p {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.feature-section .access-security .security-content h2 {
+  margin-top: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.feature-section .access-security .security-content p {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.feature-section .real-time-store-file {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.feature-section .real-time-store-file .real-time-content h2 {
+  margin-top: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.feature-section .real-time-store-file .real-time-content p {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.feature-section .real-time-store-file .store-file-content h2 {
+  margin-top: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.feature-section .real-time-store-file .store-file-content p {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.stay-productive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
+  background: #181f2a;
+}
+
+.stay-productive .stay-productive-content h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+}
+
+.stay-productive .stay-productive-content p {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.stay-productive .stay-productive-content .how-works {
+  margin-top: 1rem;
+}
+
+.stay-productive .stay-productive-content .how-works a {
+  color: #65e2d9;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.stay-productive .stay-productive-content .how-works a:hover {
+  color: white;
+}
+
+.testimonials-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: url("../images/bg-quotes.png") no-repeat, #181f2a;
+  background-position-x: 2%;
+  background-position-y: 15%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.testimonials-cards .satish {
+  padding: 3rem 3rem;
+  background: #202a3c;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.testimonials-cards .satish p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.testimonials-cards .satish .satish-info {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials-cards .satish .satish-info img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonials-cards .satish .satish-info .author-satish {
+  margin-left: 1rem;
+}
+
+.testimonials-cards .satish .satish-info .author-satish h3 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonials-cards .satish .satish-info .author-satish h4 {
+  color: white;
+  font-weight: lighter;
+}
+
+.testimonials-cards .bruce {
+  padding: 3rem 3rem;
+  background: #202a3c;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.testimonials-cards .bruce p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.testimonials-cards .bruce .bruce-info {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials-cards .bruce .bruce-info img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonials-cards .bruce .bruce-info .author-bruce {
+  margin-left: 1rem;
+}
+
+.testimonials-cards .bruce .bruce-info .author-bruce h3 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonials-cards .bruce .bruce-info .author-bruce h4 {
+  color: white;
+  font-weight: lighter;
+}
+
+.testimonials-cards .iva {
+  padding: 3rem 3rem;
+  background: #202a3c;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.testimonials-cards .iva p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.testimonials-cards .iva .iva-info {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials-cards .iva .iva-info img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonials-cards .iva .iva-info .author-iva {
+  margin-left: 1rem;
+}
+
+.testimonials-cards .iva .iva-info .author-iva h3 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonials-cards .iva .iva-info .author-iva h4 {
+  color: white;
+  font-weight: lighter;
+}
+
+.testimonials-cards .sign-up {
+  padding: 3rem 3rem;
+  position: absolute;
+  top: 80%;
+  background: #1c2431;
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  z-index: 100;
+}
+
+.testimonials-cards .sign-up h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.testimonials-cards .sign-up p {
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.testimonials-cards .sign-up input {
+  width: 50%;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+}
+
+.testimonials-cards .sign-up button {
+  padding: 1.5rem 2rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+}
+
+.testimonials-cards .sign-up button:hover {
+  background: #65e2d9;
+}
+
+.footer-section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #0b1523;
+}
+
+.footer-section .address-info .address {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-section .address-info .address p {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-section .telephone-info .phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-section .telephone-info .phone-number p {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-section .telephone-info .email {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-section .telephone-info .email p {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-section .sitemap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-section .sitemap .sitemap-links a {
+  display: block;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-section .sitemap .sitemap-links a:hover {
+  font-weight: bold;
+}
+
+.contact-links a {
+  display: block;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  font-weight: bold;
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.social-network button {
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.social-network button:hover {
+  color: #65e2d9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+span {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: small;
+}
+
+@media screen and (max-width: 900px) {
+  .intro-section {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  }
+  .intro-section .illustration-intro img {
+    max-width: 100%;
+    height: auto;
+  }
+  .feature-section .access-security {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature-section .access-security .security-content {
+    margin-top: 5rem;
+  }
+  .feature-section .real-time-store-file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature-section .real-time-store-file .store-file-content {
+    margin-top: 5rem;
+  }
+  .stay-productive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stay-productive .stay-productive-image {
+    padding: 3rem;
+  }
+  .stay-productive .stay-productive-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .stay-productive .stay-productive-content {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .stay-productive .stay-productive-content h1 {
+    font-size: 2rem;
+  }
+  .testimonials-cards {
+    display: block;
+    min-height: 200vh;
+    background-position-x: 13%;
+    background-position-y: 1%;
+    padding: 5rem;
+    position: relative;
+  }
+  .testimonials-cards br {
+    display: none;
+  }
+  .testimonials-cards .satish {
+    width: 100%;
+  }
+  .testimonials-cards .bruce {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .testimonials-cards .iva {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .testimonials-cards .sign-up {
+    left: 15%;
+    top: 85%;
+  }
+  .testimonials-cards .sign-up br {
+    display: none;
+  }
+  .testimonials-cards .sign-up h1 {
+    font-size: 2rem;
+  }
+  .testimonials-cards .sign-up input {
+    width: 100%;
+  }
+  .testimonials-cards .sign-up button {
+    width: 100%;
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+  .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .footer-section .address-info {
+    margin-top: 30rem;
+    margin-left: 5rem;
+  }
+  .footer-section .telephone-info {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .sitemap {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .sitemap .sitemap-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-section .contact-links {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .social-network {
+    margin-left: 12rem;
+    margin-top: 7rem;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  .intro-section {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  }
+  .intro-section .illustration-intro img {
+    max-width: 100%;
+    height: auto;
+  }
+  .feature-section .access-security {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature-section .access-security .security-content {
+    margin-top: 5rem;
+  }
+  .feature-section .real-time-store-file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature-section .real-time-store-file .store-file-content {
+    margin-top: 5rem;
+  }
+  .stay-productive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stay-productive .stay-productive-image {
+    padding: 3rem;
+  }
+  .stay-productive .stay-productive-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .stay-productive .stay-productive-content {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .stay-productive .stay-productive-content h1 {
+    font-size: 2rem;
+  }
+  .testimonials-cards {
+    display: block;
+    min-height: 100vh;
+    background-position-x: 13%;
+    background-position-y: 1%;
+    padding: 5rem;
+    position: relative;
+  }
+  .testimonials-cards br {
+    display: none;
+  }
+  .testimonials-cards .satish {
+    width: 100%;
+  }
+  .testimonials-cards .bruce {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .testimonials-cards .iva {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .testimonials-cards .sign-up {
+    left: 15%;
+    top: 85%;
+  }
+  .testimonials-cards .sign-up br {
+    display: none;
+  }
+  .testimonials-cards .sign-up h1 {
+    font-size: 2rem;
+  }
+  .testimonials-cards .sign-up input {
+    width: 100%;
+  }
+  .testimonials-cards .sign-up button {
+    width: 100%;
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+  .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .footer-section .address-info {
+    margin-top: 30rem;
+    margin-left: 5rem;
+  }
+  .footer-section .telephone-info {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .sitemap {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .sitemap .sitemap-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-section .contact-links {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .footer-section .social-network {
+    margin-left: 30rem;
+    margin-top: 7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
