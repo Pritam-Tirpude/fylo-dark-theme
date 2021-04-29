@@ -273,7 +273,7 @@ main {
           flex-direction: row;
   background: url("../images/bg-quotes.png") no-repeat, #181f2a;
   background-position-x: 2%;
-  background-position-y: 15%;
+  background-position-y: 30%;
   position: relative;
   min-height: 100vh;
 }
