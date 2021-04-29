@@ -614,7 +614,7 @@ main {
           flex-direction: row;
 }
 
-.social-network button {
+.social-network a {
   padding: 1rem;
   background: none;
   border: none;
@@ -622,7 +622,7 @@ main {
   cursor: pointer;
 }
 
-.social-network button:hover {
+.social-network a:hover {
   color: #65e2d9;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

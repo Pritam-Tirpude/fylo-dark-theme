@@ -433,7 +433,7 @@ main {
 .social-network {
   @include flex(center, center, row);
 
-  button {
+  a {
     padding: 1rem;
     background: none;
     border: none;
